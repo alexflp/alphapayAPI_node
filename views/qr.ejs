@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>FlashPay支付样例-扫码</title>
+    <script>
+        function redirect(url) {
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+<div style="margin-left: 10px;color:#556B2F;font-size:30px;font-weight: bolder;">方式一、扫码支付</div>
+<br/>
+<img alt="扫码支付" src="<%= qrcode %>" style="width:150px;height:150px;"/>
+<div style="margin-left: 10px;color:#556B2F;font-size:30px;font-weight: bolder;">方式二、跳转到FlashPay支付</div>
+<br/>
+<button onclick="redirect('<%= pay_url %>')">跳转
+</button>
+</body>
+</html>
